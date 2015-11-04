@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Draw a chart</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <script type="text/javascript" src="js/app.js"></script>
+        <script>
+            function chartDrawing() {
+                // Basic usage:
+                var chart = new DrawChart();
+                chart.draw();
+
+                // Advanced usage
+                // var chart = new DrawChart();
+                // var settingObj = {
+                //     func: function (XPoint) {
+                //         return Math.sin(XPoint/4) * 30;
+                //     },
+                //     equationText: "y = sin(x/4) * 30"
+                // }
+                // chart.setChartEquation(settingObj);
+                // chart.draw();
+            }
+        </script>
+    </head>
+    <body onload="chartDrawing();">
+        <canvas id="chart-canvas" width="500" height="500">
+            Sorry, your browser doesn't support canvas element.
+        </canvas>
+    </body>
+</html>
